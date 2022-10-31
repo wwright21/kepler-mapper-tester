@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_25cebf3842dd1166a3be94e04176d694 {
+                #map_6d1db8bb318cb7d813189adfbfaa52fe {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,7 +37,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_25cebf3842dd1166a3be94e04176d694" ></div>
+            <div class="folium-map" id="map_6d1db8bb318cb7d813189adfbfaa52fe" ></div>
         
     
 
@@ -46,7 +46,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tester Chester Eleventy</title>
+  <title>Title Tester</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -57,7 +57,8 @@
                     start: function (event, ui) {
                         $(this).css({
                             right: "auto",
-                            top: "auto",
+                            left: "auto",
+                            top:"auto",
                             bottom: "auto"
                         });
                     }
@@ -65,66 +66,37 @@
 });
 
   </script>
+
 </head>
 
 <body>
 
  
 <div id='maplegend' class='maplegend' 
-    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
-    border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+    style='position: absolute; z-index:9999; border:3px solid grey; background-color:rgba(255, 255, 255, 0.7);
+    border-radius:6px; padding: 8px; font-size:18px; right: 100px; top: 20px; width: 50%'>
 
-<div class='legend-title'>Population Change</div>
+<div class='top-legend'>
+<div class='legend-title'>Chicagoland Population Data</div>
 <div class='my-legend'>
-<div class='legend-title'>The Title or Explanation of your Map</div>
-<div class='legend-scale'>
-  <ul class='legend-labels'>
-    <li><span style='background:#F1EEF6;'></span>0 - 20%</li>
-    <li><span style='background:#BDC9E1;'></span>40%</li>
-    <li><span style='background:#74A9CF;'></span>60%</li>
-    <li><span style='background:#2B8CBE;'></span>80%</li>
-    <li><span style='background:#045A8D;'></span>100%</li>
-  </ul>
-</div>
-<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>
-</div>
+<div class='legend-title'>5-Year Population Change</div>
+
+
 
 <style type='text/css'>
-  .my-legend .legend-title {
-    text-align: left;
+  .top-legend .legend-title {
+    text-align: center;
     margin-bottom: 8px;
     font-weight: bold;
-    font-size: 90%;
+    font-size: 150%;
     }
-  .my-legend .legend-scale ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-    }
-  .my-legend .legend-scale ul li {
-    display: block;
-    float: left;
-    width: 50px;
-    margin-bottom: 6px;
+  .my-legend .legend-title {
     text-align: center;
-    font-size: 80%;
-    list-style: none;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 125%;
     }
-  .my-legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 15px;
-    width: 50px;
-    }
-  .my-legend .legend-source {
-    font-size: 70%;
-    color: #999;
-    clear: both;
-    }
-  .my-legend a {
-    color: #777;
-    }
+
 </style>
 
 
@@ -133,15 +105,14 @@
 </body>
 <script>    
     
-            var map_25cebf3842dd1166a3be94e04176d694 = L.map(
-                "map_25cebf3842dd1166a3be94e04176d694",
+            var map_6d1db8bb318cb7d813189adfbfaa52fe = L.map(
+                "map_6d1db8bb318cb7d813189adfbfaa52fe",
                 {
-                    center: [34.29687296230398, -83.82722211472196],
+                    center: [41.89661699004446, -87.74693846284832],
                     crs: L.CRS.EPSG3857,
                     zoom: 9,
                     zoomControl: false,
                     preferCanvas: false,
-                    maxBounds: [[33.384406371565376, -84.8042514986017], [35.32249569790266, -82.4466869023124]],
                 }
             );
 
@@ -149,14 +120,14 @@
 
         
     
-            var tile_layer_ee5171ce1863acfad91ea2b7fe51a380 = L.tileLayer(
-                "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoid3dyaWdodDIxIiwiYSI6ImNsOHgzbHF4ODAyczQzcXBoanhrNzUycTIifQ.O1VtJMs8re151o1iK4aUlQ",
-                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 9, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_25cebf3842dd1166a3be94e04176d694);
+            var tile_layer_2808b89157969c689f8e545c71745e16 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6d1db8bb318cb7d813189adfbfaa52fe);
         
     
             L.control.fullscreen(
                 {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
-            ).addTo(map_25cebf3842dd1166a3be94e04176d694);
+            ).addTo(map_6d1db8bb318cb7d813189adfbfaa52fe);
         
 </script>
