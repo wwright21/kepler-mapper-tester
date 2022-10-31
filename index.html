@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_fecb440a442aeabacd2f760042a6f2c5 {
+                #map_bdddd3ec6a33108bd5292991d1a9403c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,24 +37,42 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_fecb440a442aeabacd2f760042a6f2c5" ></div>
+            <div class="folium-map" id="map_bdddd3ec6a33108bd5292991d1a9403c" ></div>
         
     
 
 <!doctype html>
 <html lang="en">
-<head>
- 
-  <title>Tester Chester2</title>
- 
-</head>
+# <head>
+#   <meta charset="utf-8">
+#   <meta name="viewport" content="width=device-width, initial-scale=1">
+#   <title>Tester Chester 1</title>
+#   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+#   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+#   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+#   <script>
+#   $( function() {
+#     $( "#maplegend" ).draggable({
+#                     start: function (event, ui) {
+#                         $(this).css({
+#                             right: "auto",
+#                             top: "auto",
+#                             bottom: "auto"
+#                         });
+#                     }
+#                 });
+# });
+
+#   </script>
+# </head>
 
 
 </body>
 <script>    
     
-            var map_fecb440a442aeabacd2f760042a6f2c5 = L.map(
-                "map_fecb440a442aeabacd2f760042a6f2c5",
+            var map_bdddd3ec6a33108bd5292991d1a9403c = L.map(
+                "map_bdddd3ec6a33108bd5292991d1a9403c",
                 {
                     center: [34.29687296230398, -83.82722211472196],
                     crs: L.CRS.EPSG3857,
@@ -69,14 +87,14 @@
 
         
     
-            var tile_layer_77d6e1b821cbca026c5872f93d22b574 = L.tileLayer(
+            var tile_layer_3e3f6610e83fa8092cd7bf7c4ac7dcc7 = L.tileLayer(
                 "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoid3dyaWdodDIxIiwiYSI6ImNsOHgzbHF4ODAyczQzcXBoanhrNzUycTIifQ.O1VtJMs8re151o1iK4aUlQ",
                 {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 9, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_fecb440a442aeabacd2f760042a6f2c5);
+            ).addTo(map_bdddd3ec6a33108bd5292991d1a9403c);
         
     
             L.control.fullscreen(
                 {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
-            ).addTo(map_fecb440a442aeabacd2f760042a6f2c5);
+            ).addTo(map_bdddd3ec6a33108bd5292991d1a9403c);
         
 </script>
