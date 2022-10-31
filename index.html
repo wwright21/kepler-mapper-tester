@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_525cf8d5edf59624546d8324502522c1 {
+                #map_25cebf3842dd1166a3be94e04176d694 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,7 +37,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_525cf8d5edf59624546d8324502522c1" ></div>
+            <div class="folium-map" id="map_25cebf3842dd1166a3be94e04176d694" ></div>
         
     
 
@@ -46,7 +46,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tester Chester 5</title>
+  <title>Tester Chester Eleventy</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -71,7 +71,7 @@
 
  
 <div id='maplegend' class='maplegend' 
-    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.2);
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
 <div class='legend-title'>Population Change</div>
@@ -86,14 +86,55 @@
     <li><span style='background:#045A8D;'></span>100%</li>
   </ul>
 </div>
+<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>
+</div>
+
+<style type='text/css'>
+  .my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul li {
+    display: block;
+    float: left;
+    width: 50px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 80%;
+    list-style: none;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 15px;
+    width: 50px;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+</style>
+
 
 </body>
 
 </body>
 <script>    
     
-            var map_525cf8d5edf59624546d8324502522c1 = L.map(
-                "map_525cf8d5edf59624546d8324502522c1",
+            var map_25cebf3842dd1166a3be94e04176d694 = L.map(
+                "map_25cebf3842dd1166a3be94e04176d694",
                 {
                     center: [34.29687296230398, -83.82722211472196],
                     crs: L.CRS.EPSG3857,
@@ -108,14 +149,14 @@
 
         
     
-            var tile_layer_34dd8311b59c8f6db621e3be25797dae = L.tileLayer(
+            var tile_layer_ee5171ce1863acfad91ea2b7fe51a380 = L.tileLayer(
                 "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoid3dyaWdodDIxIiwiYSI6ImNsOHgzbHF4ODAyczQzcXBoanhrNzUycTIifQ.O1VtJMs8re151o1iK4aUlQ",
                 {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 9, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_525cf8d5edf59624546d8324502522c1);
+            ).addTo(map_25cebf3842dd1166a3be94e04176d694);
         
     
             L.control.fullscreen(
                 {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
-            ).addTo(map_525cf8d5edf59624546d8324502522c1);
+            ).addTo(map_25cebf3842dd1166a3be94e04176d694);
         
 </script>
